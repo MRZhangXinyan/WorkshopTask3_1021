@@ -84,8 +84,4 @@ Audit log: results/hardening_audit.jsonl
 - The JSONL audit log is local, not cryptographically protected, not replicated, and may contain application values that should be restricted in a real system.
 - Original teaching scenarios deliberately exhibit limitations. In particular, the original Part 4 example reuses proposal number 101 for two different values; it has **not** been silently altered here. The original Part 7.4 scenario directly monkey-patches `majority()` to display 2; the hardening checks use the validated `quorumSize` and cannot be bypassed by that display-only change.
 
-## Submission guidance
 
-Check Blackboard's workshop submission window, attendance policy, and which tasks the marker expects to see. The manual requests a ZIP submission and also a GitHub push containing the project and a `README.md`, an appropriate workshop/date tag, and an invitation for `systemsecuritybcsg`.
-
-See `PART8_REPORT.md` for a concise English explanation of all five tasks and `MODIFICATION_GUIDE.md` for file-by-file implementation details and testing instructions.
