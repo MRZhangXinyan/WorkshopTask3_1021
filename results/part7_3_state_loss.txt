@@ -1,0 +1,28 @@
+
+> paxos-lab@1.0.0 state-loss
+> node scenarios/breaking_assumptions/state_loss.js
+
+
+====================
+SCENARIO: STATE LOSS
+====================
+
+Before Loss:
+Acceptor {
+  id: 'A1',
+  highestPromised: 101,
+  acceptedProposal: { number: 101, value: 'instances=10' },
+  online: true
+}
+
+After Loss:
+Acceptor {
+  id: 'A1',
+  highestPromised: 0,
+  acceptedProposal: null,
+  online: true
+}
+
+WARNING:
+Acceptor forgot previous history.
+Paxos safety assumption violated.
