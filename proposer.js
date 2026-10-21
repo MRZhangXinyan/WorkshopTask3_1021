@@ -7,7 +7,7 @@ class Proposer {
 
         this.id = id;
 
-        this.proposalNumber = 100;
+        this.proposalNumber = 102;
     }
 
     nextProposal(value) {
